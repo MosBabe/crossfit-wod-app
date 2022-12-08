@@ -11,7 +11,7 @@ const getRecordForWorkout = (workoutId) => {
         message: `Can't find workout with the id '${workoutId}'`,
       };
     }
-    console.log("record'a girdi")
+    console.log("record sonuc")
     console.log(record)
     return record;
   } catch (error) {

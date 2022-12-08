@@ -10,7 +10,10 @@ const getRecordForWorkout = (req,res) =>{
     try {
         console.log("recordcontroller try a girdi");
       const record = recordService.getRecordForWorkout(workoutId);
-      res.status(204).send({status:"OK", data:record});
+      console.log("controller sonuc: ");
+      console.log(record);
+      res.send({ status: "OK", data: record });
+      
     } catch (error) {
       res
       .status(error?.status || 500)
